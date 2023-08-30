@@ -6,7 +6,8 @@ import {
   PathContainer,
 } from "./home.styles";
 import { UserOutlined } from "@ant-design/icons";
-import Categoryes from "./Categoryes/Categoryes";
+import Categoryes from "./Categoryes";
+import { Route, Routes } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -32,7 +33,7 @@ const Home = () => {
         </svg>{" "}
         modellari
       </PathContainer>
-     <Categoryes/>
+      <Categoryes />
     </HomeContainer>
   );
 };

@@ -14,7 +14,7 @@ export const HomeWrapper = styled.div`
 `;
 export const HomeButton = styled.div`
   display: flex;
-  width: 130px;
+  width: 150px;
   padding: 10px 20px;
   justify-content: center;
   align-items: center;
@@ -40,4 +40,5 @@ export const PathContainer = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+  margin-top: 10px;
 `;

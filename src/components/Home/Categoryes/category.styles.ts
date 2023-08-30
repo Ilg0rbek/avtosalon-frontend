@@ -1,9 +1,11 @@
 import { styled } from "styled-components";
 
 export const CardsContainer = styled.div`
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
   margin-top: 30px;
 `;
 
@@ -14,7 +16,7 @@ export const CategoryTitle = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-top: 30px;
+  margin-top: 15px;
 `;
 
 export const CardMachine = styled.div`
