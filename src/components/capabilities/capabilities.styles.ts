@@ -7,7 +7,6 @@ export const CapabilitiesContainer = styled.div`
   align-items: center;
   justify-content: center;
 `;
-
 export const AboutCar = styled.div`
   width: 396px;
   height: 660px;
@@ -16,16 +15,17 @@ export const AboutCar = styled.div`
   border-radius: 8px;
   background: #f6f6f6;
 `;
-
 export const ViewCars = styled.div`
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  width: 824px;
-  height: 528px;
-  gap: 40px;
+  justify-content: center;
+  width: 800px;
+  height: 500px;
+  gap: 10px;
+  padding: 50px;
+  text-align: center;
 `;
-
 export const TitleCar = styled.div`
   color: var(--light-mode-black-100, #000);
   font-family: Noto Sans;
@@ -35,7 +35,6 @@ export const TitleCar = styled.div`
   line-height: 32px;
   text-transform: uppercase;
 `;
-
 export const PriceCar = styled.div`
   color: var(--light-mode-black-100, #000);
   font-family: Noto Sans;
@@ -44,10 +43,9 @@ export const PriceCar = styled.div`
   font-weight: 400;
   line-height: 32px;
 `;
-
 export const CarImage = styled.img`
   width: 348px;
-  height: 160px;
+  height: 200px;
   flex-shrink: 0;
   background: #f6f6f6 lightgray 50% / contain no-repeat;
 `;
@@ -60,12 +58,64 @@ export const BoldText = styled.div`
   font-weight: 600;
   line-height: 32px;
 `;
-
 export const SimpleText = styled.span`
   color: rgba(0, 0, 0, 0.6);
   font-family: Noto Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; 
+  line-height: 32px;
+`;
+
+export const Line = styled.div`
+  width: 348px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.20);
+`;
+
+//Window the right styles
+export const Car3DImage = styled.img`
+  width: 824px;
+  height: 444px;
+  background: white lightgray 0px -81px / 100% 139.189% no-repeat;
+`;
+
+export const Car3DText = styled.div`
+  color: #000;
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+`;
+
+export const SelectText = styled.span`
+  color: #000;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+`;
+
+export const SelectForm = styled.form`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+`;
+
+export const RadioInput = styled.input`
+  width: 18px;
+  height: 18px;
+`;
+
+export const SelectValue = styled.label`
+  color: #000;
+  font-family: Noto Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 `;
