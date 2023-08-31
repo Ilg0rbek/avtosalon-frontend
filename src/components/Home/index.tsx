@@ -1,7 +1,7 @@
 import { HomeContainer } from "./home.styles";
 import Categoryes from "../categoryes";
 import { Route, Routes } from "react-router-dom";
-import Navbar from "./Navbar";
+import Navbar from "./navbar";
 import Models from "../modelCars";
 import Capabilities from "../capabilities";
 

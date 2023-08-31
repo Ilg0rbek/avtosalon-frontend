@@ -1,15 +1,17 @@
 import React from "react";
 import { HomeButton, HomeWrapper, PathContainer } from "./home.styles";
 import { UserOutlined } from "@ant-design/icons";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
       <HomeWrapper>
-        <HomeButton>
-          <UserOutlined /> Admin o‘tish
-        </HomeButton>
+        <Link to={"/admin"}>
+          <HomeButton>
+            <UserOutlined /> Admin o‘tish
+          </HomeButton>
+        </Link>
       </HomeWrapper>
       <PathContainer>
         <Link to={"/"}>Bosh sahifa</Link>{" "}
