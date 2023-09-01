@@ -70,7 +70,7 @@ export const SimpleText = styled.span`
 export const Line = styled.div`
   width: 348px;
   height: 2px;
-  background: rgba(0, 0, 0, 0.20);
+  background: rgba(0, 0, 0, 0.2);
 `;
 
 //Window the right styles
@@ -118,4 +118,10 @@ export const SelectValue = styled.label`
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+`;
+
+export const Degree = styled.img`
+  width: 32px;
+  height: 32px;
+  color: #000000;
 `;

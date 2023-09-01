@@ -1,4 +1,3 @@
-import React from "react";
 import {
   AboutCar,
   BoldText,
@@ -14,11 +13,22 @@ import {
   ViewCars,
   SelectValue,
   Line,
+  Degree,
 } from "./capabilities.styles";
 import CarsImg from "./assets/yon.svg";
 import Car3DImg from "./assets/ropara.svg";
+import DegreeImg from "./assets/degree.svg";
+import { useEffect, useState } from "react";
 
 const Capabilities = () => {
+  const [select, setSelect] = useState<string>("tashqi");
+
+  const HandleSelect = (event: React.ChangeEvent<HTMLInputElement>): void => {
+    setSelect(event.target.value);
+  };
+
+  useEffect(() => {}, [select]);
+
   return (
     <CapabilitiesContainer>
       <AboutCar>
@@ -54,12 +64,13 @@ const Capabilities = () => {
           </SimpleText>
         </BoldText>
         <Line />
-        <BoldText style={{textAlign:"end", marginTop:"2px"}}>
+        <BoldText style={{ textAlign: "end", marginTop: "2px" }}>
           Umumiy xarajat: <SimpleText>329 900 000 so'm dan</SimpleText>
         </BoldText>
       </AboutCar>
       <ViewCars>
         <Car3DImage src={Car3DImg} />
+        <Degree src={DegreeImg} />
         <Car3DText>
           Tasvir tanlangan konfiguratsiyaga mos kelmasligi mumkin. Mashinaning
           rangi ushbu saytda taqdim etilganidan farq qilishi mumkin.
@@ -71,6 +82,7 @@ const Capabilities = () => {
             name="select"
             id="tashqi"
             value={"tashqi"}
+            onChange={HandleSelect}
           />
           <SelectValue htmlFor="tashqi">Tashqi</SelectValue>
           <RadioInput
@@ -79,6 +91,7 @@ const Capabilities = () => {
             name="select"
             id="ichki"
             value={"ichki"}
+            onChange={HandleSelect}
           />
           <SelectValue htmlFor="ichki">Ichki makon</SelectValue>
         </SelectForm>
