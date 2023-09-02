@@ -2,7 +2,7 @@ import { HomeContainer } from "./home.styles";
 import Categoryes from "../categoryes";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./navbar";
-import Models from "../modelCars";
+import Models from "../modelcars";
 import Capabilities from "../capabilities";
 
 const Home = () => {

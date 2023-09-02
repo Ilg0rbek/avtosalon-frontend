@@ -2,8 +2,6 @@ import {
   AboutCar,
   BoldText,
   CapabilitiesContainer,
-  Car3DImage,
-  Car3DText,
   CarImage,
   PriceCar,
   RadioInput,
@@ -13,12 +11,14 @@ import {
   ViewCars,
   SelectValue,
   Line,
+  Car3DText,
   Degree,
 } from "./capabilities.styles";
 import CarsImg from "./assets/yon.svg";
-import Car3DImg from "./assets/ropara.svg";
 import DegreeImg from "./assets/degree.svg";
 import { useEffect, useState } from "react";
+import VR from "./VRviews";
+import Views from "./360views";
 
 const Capabilities = () => {
   const [select, setSelect] = useState<string>("tashqi");
@@ -69,7 +69,7 @@ const Capabilities = () => {
         </BoldText>
       </AboutCar>
       <ViewCars>
-        <Car3DImage src={Car3DImg} />
+        {select === "tashqi" ? <Views /> : <VR />}
         <Degree src={DegreeImg} />
         <Car3DText>
           Tasvir tanlangan konfiguratsiyaga mos kelmasligi mumkin. Mashinaning
