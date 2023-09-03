@@ -1,3 +1,9 @@
 .App {
   background: #FFF;
 }
+.pnlm-fullscreen-toggle-button{
+  display: none !important;
+}
+.pnlm-controls{
+  display: none !important;
+}

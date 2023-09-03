@@ -5,7 +5,8 @@ export const CapabilitiesContainer = styled.div`
   margin: 20px auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 `;
 export const AboutCar = styled.div`
   width: 396px;
@@ -16,10 +17,10 @@ export const AboutCar = styled.div`
   background: #f6f6f6;
 `;
 export const ViewCars = styled.div`
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 800px;
   height: 500px;
   gap: 10px;
@@ -124,4 +125,35 @@ export const Degree = styled.img`
   width: 32px;
   height: 32px;
   color: #000000;
+`;
+
+export const CarNavbar3D = styled.div`
+  width: 824px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+`;
+
+export const CarNavText = styled.div`
+  color: var(--light-mode-black-100, #000);
+  font-family: Noto Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  text-transform: uppercase;
+`;
+
+export const IconNav = styled.img`
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+`;
+
+export const WrapperIcon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60px;
 `;

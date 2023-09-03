@@ -13,12 +13,18 @@ import {
   Line,
   Car3DText,
   Degree,
+  CarNavbar3D,
+  CarNavText,
+  IconNav,
+  WrapperIcon,
 } from "./capabilities.styles";
 import CarsImg from "./assets/yon.svg";
 import DegreeImg from "./assets/degree.svg";
 import { useEffect, useState } from "react";
 import VR from "./VRviews";
 import Views from "./360views";
+import HomeIcon from "./assets/home.svg";
+import DrawIcon from "./assets/draw.svg";
 
 const Capabilities = () => {
   const [select, setSelect] = useState<string>("tashqi");
@@ -69,6 +75,13 @@ const Capabilities = () => {
         </BoldText>
       </AboutCar>
       <ViewCars>
+        <CarNavbar3D>
+          <CarNavText>Chevrolet Malibu</CarNavText>
+          <WrapperIcon>
+            <IconNav src={DrawIcon} />
+            <IconNav src={HomeIcon} />
+          </WrapperIcon>
+        </CarNavbar3D>
         {select === "tashqi" ? <Views /> : <VR />}
         <Degree src={DegreeImg} />
         <Car3DText>

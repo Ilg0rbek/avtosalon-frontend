@@ -12,7 +12,7 @@ const VR = () => {
     <div>
       <Pannellum
         width="824px"
-        height="444px"
+        height="400px"
         image={image}
         pitch={10}
         yaw={180}
