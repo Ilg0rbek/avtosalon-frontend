@@ -8485,6 +8485,11 @@ react-i18next@^13.2.0:
     "@babel/runtime" "^7.22.5"
     html-parse-stringify "^3.0.1"
 
+react-image-turntable@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/react-image-turntable/-/react-image-turntable-3.0.2.tgz#47c96e3ce164a891d8a0aa3f778e0f41c0abfd86"
+  integrity sha512-SZegA3Mk6WBeykpZPvDzGfsKA+v5j2/zdVSQne0d3clZPrqNPiGbCc1zfCnxKGUtlKOxME0VwIKgN2maBob9WA==
+
 react-is@^16.12.0, react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
