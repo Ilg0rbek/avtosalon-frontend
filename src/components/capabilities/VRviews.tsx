@@ -1,11 +1,10 @@
 import { useRef, useState } from "react";
 // @ts-ignore
 import { Pannellum } from "pannellum-react";
-
+import image from "./assets/car.jpg"
 const VR = () => {
   const [yaw, setYaw] = useState(0);
   const [pitch, setPitch] = useState(0);
-  const [image] = useState("https://pannellum.org/images/alma.jpg");
   const panImage = useRef<any>(null);
 
   return (
@@ -14,10 +13,9 @@ const VR = () => {
         width="824px"
         height="400px"
         image={image}
-        pitch={10}
-        yaw={180}
-        hfov={110}
-        autoRotate={2}
+        pitch={-10}
+        yaw={-30}
+        hfov={120}
         autoLoad
         disableKeyboardCtrl
         // @ts-ignore

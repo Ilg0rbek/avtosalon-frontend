@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./navbar";
 import Models from "../modelcars";
 import Capabilities from "../capabilities";
+import Admin from "../../admin";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Route path={"/"} element={<Categoryes />} />
         <Route path={"/cars"} element={<Models/>} />
         <Route path={"/capabilities"} element={<Capabilities/>} />
+        <Route path={"/admin"} element={<Admin/>} />
       </Routes>
     </HomeContainer>
   );
