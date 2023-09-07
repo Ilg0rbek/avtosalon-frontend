@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const CapabilitiesContainer = styled.div`
-  width: 100%;
+  width: 90%;
   margin: 20px auto;
   display: flex;
   align-items: center;

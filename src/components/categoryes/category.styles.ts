@@ -7,6 +7,8 @@ export const CardsContainer = styled.div`
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 30px;
+  width: 90%;
+  margin: 10px auto;
 `;
 
 export const CategoryTitle = styled.div`
@@ -17,6 +19,8 @@ export const CategoryTitle = styled.div`
   font-weight: 700;
   line-height: normal;
   margin-top: 15px;
+  width: 90%;
+  margin: 15px auto;
 `;
 
 export const CardMachine = styled.div`

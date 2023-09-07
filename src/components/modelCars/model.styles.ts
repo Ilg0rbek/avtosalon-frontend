@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const ModelsContainer = styled.div`
   margin: auto;
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content:center;

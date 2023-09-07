@@ -1,12 +1,12 @@
 import { styled } from "styled-components";
 
 export const HomeContainer = styled.div`
-  margin: auto;
-  width: 90%;
+  width: 100%;
 `;
 
 export const HomeWrapper = styled.div`
-  width: 100%;
+ margin: auto;
+  width: 90%;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -41,4 +41,6 @@ export const PathContainer = styled.div`
   font-weight: 400;
   line-height: 24px;
   margin-top: 10px;
+  width: 90%;
+  margin: auto;
 `;
