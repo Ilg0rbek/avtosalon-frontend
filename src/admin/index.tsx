@@ -25,7 +25,9 @@ const Admin = () => {
                   <input type="password" placeholder="Password" required />
                 </p>
                 <p>
-                  <input type="submit" value="Login in" id="btn1" />
+                  <Link to={"/admin/panel"}>
+                    <input type="submit" value="Login in" id="btn1" />
+                  </Link>
                 </p>
               </form>
             </div>
