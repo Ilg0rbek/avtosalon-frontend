@@ -1,8 +1,8 @@
-import React from 'react'
+import * as Styles from './siedbar.styles'
 
 const Right = () => {
   return (
-    <div>Right</div>
+    <Styles.WrapperRight>Right</Styles.WrapperRight>
   )
 }
 
