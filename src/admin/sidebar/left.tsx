@@ -1,10 +1,14 @@
 import * as Styles from "./siedbar.styles";
-import { Link } from "react-router-dom";
 import HIcon from "../icons/home.svg";
 import QIcon from "../icons/question.svg";
 import PIcon from "../icons/poster.svg";
+import { useState } from "react";
+import MIcon from "../icons/moon.svg"
+import SIcon from "../icons/soon.svg"
 
 const Left = () => {
+  const [mode, setMode] = useState<string>("night");
+
   const data = [
     {
       id: 1,
@@ -39,8 +43,8 @@ const Left = () => {
         ))}
       </Styles.OrderList>
       <Styles.LMode>
-        <span>Dark</span>
-        <span>Light</span>
+        <Styles.ModeWrapper><Styles.LIcon  src={MIcon} /></Styles.ModeWrapper>
+        <span><Styles.LIcon  src={SIcon} /></span>
       </Styles.LMode>
     </Styles.WrapperLeft>
   );

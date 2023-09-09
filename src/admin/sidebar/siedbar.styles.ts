@@ -8,19 +8,19 @@ export const SiedbarWrapperFluid = styled.div`
 
 // styles for Left
 export const WrapperLeft = styled.div`
-  display: flex;
   width: 340px;
-  padding: 24px;
+  height: 100vh;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
-  flex-shrink: 0;
-  align-self: stretch;
+  align-items: center;
+  padding: 24px;
   background: #fcfcfc;
 `;
 
 export const OrderList = styled.ol`
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: flex-start;
   gap: 2px;
@@ -35,6 +35,7 @@ export const OrderListItem = styled.li`
   gap: 10px;
   align-self: stretch;
   border-radius: 12px;
+  cursor: pointer;
 `;
 
 export const LIcon = styled.img`
@@ -55,13 +56,26 @@ export const ITitle = styled.div`
 export const LMode = styled.div`
   display: flex;
   width: 280px;
-  padding: 10px;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-shrink: 0;
-  align-self: stretch;
-  background: white;
+  padding: 2px 15px;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  background: #f4f4f4;
+  margin: auto;
   border-radius: 20px;
+`;
+
+export const ModeWrapper = styled.div`
+  display: flex;
+  padding: 5px 0px;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  border-radius: 32px;
+  background: var(--neutral-01, #fcfcfc);
+  box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.25),
+    0px 2px 0px 0px rgba(255, 255, 255, 0.25) inset,
+    0px -1px 1px 0px rgba(0, 0, 0, 0.04) inset;
 `;
 
 // styles for Right
