@@ -1,11 +1,4 @@
-import React from "react";
-import {
-  ModelCarPrice,
-  ModelCard,
-  ModelTitle,
-  ModelsCarImg,
-  ModelsContainer,
-} from "./model.styles";
+import * as Styles from "./model.styles";
 import Tahoe from "./assets/tahoe.svg";
 import Damas from "./assets/damas.svg";
 import Equinox from "./assets/equinox.svg";
@@ -15,62 +8,62 @@ import { Link } from "react-router-dom";
 
 const Models = () => {
   return (
-    <ModelsContainer>
+    <Styles.ModelsContainer>
       <Link to={"/capabilities"}>
-        <ModelCard>
-          <ModelsCarImg src={Tahoe} />
-          <ModelTitle>Chevrolet Tahoe</ModelTitle>
-          <ModelCarPrice>Narxi: 329 900 000</ModelCarPrice>
-        </ModelCard>
+        <Styles.ModelCard>
+          <Styles.ModelsCarImg src={Tahoe} />
+          <Styles.ModelTitle>Chevrolet Tahoe</Styles.ModelTitle>
+          <Styles.ModelCarPrice>Narxi: 329 900 000</Styles.ModelCarPrice>
+        </Styles.ModelCard>
       </Link>
       <Link to={"/capabilities"}></Link>
-      <ModelCard>
-        <ModelsCarImg src={Damas} />
-        <ModelTitle>Chevrolet Tahoe</ModelTitle>
-        <ModelCarPrice>Narxi: 329 900 000</ModelCarPrice>
-      </ModelCard>
+      <Styles.ModelCard>
+        <Styles.ModelsCarImg src={Damas} />
+        <Styles.ModelTitle>Chevrolet Tahoe</Styles.ModelTitle>
+        <Styles.ModelCarPrice>Narxi: 329 900 000</Styles.ModelCarPrice>
+      </Styles.ModelCard>
       <Link to={"/capabilities"}></Link>
-      <ModelCard>
-        <ModelsCarImg src={Equinox} />
-        <ModelTitle>Chevrolet Tahoe</ModelTitle>
-        <ModelCarPrice>Narxi: 329 900 000</ModelCarPrice>
-      </ModelCard>
+      <Styles.ModelCard>
+        <Styles.ModelsCarImg src={Equinox} />
+        <Styles.ModelTitle>Chevrolet Tahoe</Styles.ModelTitle>
+        <Styles.ModelCarPrice>Narxi: 329 900 000</Styles.ModelCarPrice>
+      </Styles.ModelCard>
       <Link to={"/capabilities"}>
-        <ModelCard>
-          <ModelsCarImg src={Nexia} />
-          <ModelTitle>Chevrolet Tahoe</ModelTitle>
-          <ModelCarPrice>Narxi: 329 900 000</ModelCarPrice>
-        </ModelCard>
+        <Styles.ModelCard>
+          <Styles.ModelsCarImg src={Nexia} />
+          <Styles.ModelTitle>Chevrolet Tahoe</Styles.ModelTitle>
+          <Styles.ModelCarPrice>Narxi: 329 900 000</Styles.ModelCarPrice>
+        </Styles.ModelCard>
       </Link>
       <Link to={"/capabilities"}>
-        <ModelCard>
-          <ModelsCarImg src={Malibu} />
-          <ModelTitle>Chevrolet Malibu</ModelTitle>
-          <ModelCarPrice>Narxi: 329 900 000</ModelCarPrice>
-        </ModelCard>
+        <Styles.ModelCard>
+          <Styles.ModelsCarImg src={Malibu} />
+          <Styles.ModelTitle>Chevrolet Malibu</Styles.ModelTitle>
+          <Styles.ModelCarPrice>Narxi: 329 900 000</Styles.ModelCarPrice>
+        </Styles.ModelCard>
       </Link>
       <Link to={"/capabilities"}>
-        <ModelCard>
-          <ModelsCarImg src={Damas} />
-          <ModelTitle>Chevrolet Tahoe</ModelTitle>
-          <ModelCarPrice>Narxi: 329 900 000</ModelCarPrice>
-        </ModelCard>
+        <Styles.ModelCard>
+          <Styles.ModelsCarImg src={Damas} />
+          <Styles.ModelTitle>Chevrolet Tahoe</Styles.ModelTitle>
+          <Styles.ModelCarPrice>Narxi: 329 900 000</Styles.ModelCarPrice>
+        </Styles.ModelCard>
       </Link>
       <Link to={"/capabilities"}>
-        <ModelCard>
-          <ModelsCarImg src={Equinox} />
-          <ModelTitle>Chevrolet Tahoe</ModelTitle>
-          <ModelCarPrice>Narxi: 329 900 000</ModelCarPrice>
-        </ModelCard>
+        <Styles.ModelCard>
+          <Styles.ModelsCarImg src={Equinox} />
+          <Styles.ModelTitle>Chevrolet Tahoe</Styles.ModelTitle>
+          <Styles.ModelCarPrice>Narxi: 329 900 000</Styles.ModelCarPrice>
+        </Styles.ModelCard>
       </Link>
       <Link to={"/capabilities"}>
-        <ModelCard>
-          <ModelsCarImg src={Tahoe} />
-          <ModelTitle>Chevrolet Tahoe</ModelTitle>
-          <ModelCarPrice>Narxi: 329 900 000</ModelCarPrice>
-        </ModelCard>
+        <Styles.ModelCard>
+          <Styles.ModelsCarImg src={Tahoe} />
+          <Styles.ModelTitle>Chevrolet Tahoe</Styles.ModelTitle>
+          <Styles.ModelCarPrice>Narxi: 329 900 000</Styles.ModelCarPrice>
+        </Styles.ModelCard>
       </Link>
-    </ModelsContainer>
+    </Styles.ModelsContainer>
   );
 };
 

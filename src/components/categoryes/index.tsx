@@ -1,11 +1,4 @@
-import React from "react";
-import {
-  CardMachine,
-  CardsContainer,
-  CategoryTitle,
-  MachineImg,
-  MachineMark,
-} from "./category.styles";
+import * as Styles from "./category.styles";
 import Chevrolet from "./assets/chevrolet.svg";
 import Ferra from "./assets/ferra.svg";
 import Lada from "./assets/lada.svg";
@@ -14,33 +7,33 @@ import { Link } from "react-router-dom";
 const Categoryes = () => {
   return (
     <>
-      <CategoryTitle>Modellari</CategoryTitle>
-      <CardsContainer>
+      <Styles.CategoryTitle>Modellari</Styles.CategoryTitle>
+      <Styles.CardsContainer>
         <Link to={"/cars"}>
-          <CardMachine>
-            <MachineImg src={Chevrolet} />
-            <MachineMark>chevrolet</MachineMark>
-          </CardMachine>
+          <Styles.CardMachine>
+            <Styles.MachineImg src={Chevrolet} />
+            <Styles.MachineMark>chevrolet</Styles.MachineMark>
+          </Styles.CardMachine>
         </Link>
         <Link to={"/cars"}>
-          <CardMachine>
-            <MachineImg src={Lada} />
-            <MachineMark>lada</MachineMark>
-          </CardMachine>
+          <Styles.CardMachine>
+            <Styles.MachineImg src={Lada} />
+            <Styles.MachineMark>lada</Styles.MachineMark>
+          </Styles.CardMachine>
         </Link>
         <Link to={"/cars"}>
-          <CardMachine>
-            <MachineImg src={Lambo} />
-            <MachineMark>lamborghini</MachineMark>
-          </CardMachine>
+          <Styles.CardMachine>
+            <Styles.MachineImg src={Lambo} />
+            <Styles.MachineMark>lamborghini</Styles.MachineMark>
+          </Styles.CardMachine>
         </Link>
         <Link to={"/cars"}>
-          <CardMachine>
-            <MachineImg src={Ferra} />
-            <MachineMark>ferrari</MachineMark>
-          </CardMachine>
+          <Styles.CardMachine>
+            <Styles.MachineImg src={Ferra} />
+            <Styles.MachineMark>ferrari</Styles.MachineMark>
+          </Styles.CardMachine>
         </Link>
-      </CardsContainer>
+      </Styles.CardsContainer>
     </>
   );
 };
