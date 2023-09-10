@@ -4,6 +4,7 @@ export const SiedbarWrapperFluid = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  background: #F4F4F4;
 `;
 
 // styles for Left
@@ -21,6 +22,7 @@ export const WrapperLeft = styled.div`
 export const OrderList = styled.ol`
   display: flex;
   flex: 1;
+  overflow-y: scroll;
   flex-direction: column;
   align-items: flex-start;
   gap: 2px;
@@ -58,6 +60,7 @@ export const LMode = styled.div`
   width: 280px;
   padding: 2px 15px;
   height: 40px;
+  cursor: pointer;
   justify-content: space-between;
   align-items: center;
   background: #f4f4f4;
@@ -82,4 +85,61 @@ export const ModeWrapper = styled.div`
 export const WrapperRight = styled.div`
   height: 100vh;
   flex: 1 0 0;
+`;
+
+export const RightNavbar = styled.div`
+  display: flex;
+  width: 100%;
+  padding: 20px 50px;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--neutral-01, #fcfcfc);
+  box-shadow: 1px 0px 0px 0px #f4f4f4 inset;
+`;
+
+export const NavButton = styled.div`
+  width: 192px;
+  padding: 9px 18px;
+  border-radius: 12px;
+  background: var(--primary-01, #2a85ff);
+  cursor: pointer;
+  color: var(--neutral-01, #fcfcfc);
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+`;
+
+export const NavUser = styled.div`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 16px;
+`;
+
+export const Notification = styled.img`
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+`;
+
+export const UserAcount = styled.img`
+  width: 32px;
+  height: 32px;
+  border-radius: 48px;
+  background: var(--secondary-01, #ffbc99);
+`;
+
+export const TableCart = styled.div`
+  display: flex;
+  width: 90%;
+  padding: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  border-radius: 8px;
+  background: var(--neutral-01, #fcfcfc);
+  margin: 30px auto;
 `;
