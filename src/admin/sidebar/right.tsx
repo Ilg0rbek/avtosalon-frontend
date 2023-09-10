@@ -31,7 +31,7 @@ const Right = () => {
           <Styles.CartNavLogoWrapper>
             <Styles.CartLogo /> Mashinalar
           </Styles.CartNavLogoWrapper>
-          <div
+          <Styles.TableHeadText
             style={{
               display: "flex",
               gap: "18px",
@@ -44,7 +44,7 @@ const Right = () => {
             <Styles.CartAddButton>
               <PlusOutlined /> Mashina qo‘shish
             </Styles.CartAddButton>
-          </div>
+          </Styles.TableHeadText>
         </Styles.CartNav>
       </Styles.TableCart>
     </Styles.WrapperRight>

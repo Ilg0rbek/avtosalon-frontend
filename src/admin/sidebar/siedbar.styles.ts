@@ -182,14 +182,30 @@ export const CartAddButton = styled.button`
   gap: 12px;
   border-radius: 12px;
   background: var(--primary-01, #2a85ff);
-
   color: var(--neutral-01, #fcfcfc);
-
-  /* Button 1 */
   font-family: Inter;
-  font-size: 13px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
   line-height: 24px; /* 160% */
   letter-spacing: -0.15px;
+`;
+
+export const TableHead = styled.div`
+  display: flex;
+  width: 90%;
+  padding: 0px 12px;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 20px;
+`;
+
+export const TableHeadText = styled.div`
+  color: var(--neutral-04, #6f767e);
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 123.077% */
+  letter-spacing: -0.13px;
 `;
