@@ -4,7 +4,7 @@ export const SiedbarWrapperFluid = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  background: #F4F4F4;
+  background: #f4f4f4;
 `;
 
 // styles for Left
@@ -142,4 +142,54 @@ export const TableCart = styled.div`
   border-radius: 8px;
   background: var(--neutral-01, #fcfcfc);
   margin: 30px auto;
+`;
+
+export const CartNav = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+`;
+
+export const CartNavLogoWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 188px;
+  gap: 14px;
+  color: var(--neutral-07, #1a1d1f);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+`;
+
+export const CartLogo = styled.div`
+  width: 16px;
+  height: 32px;
+  border-radius: 4px;
+  background: var(--secondary-05, #ffd88d);
+`;
+
+export const CartAddButton = styled.button`
+  display: flex;
+  width: 192px;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px;
+  background: var(--primary-01, #2a85ff);
+
+  color: var(--neutral-01, #fcfcfc);
+
+  /* Button 1 */
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 160% */
+  letter-spacing: -0.15px;
 `;

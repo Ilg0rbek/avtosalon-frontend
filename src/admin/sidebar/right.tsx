@@ -1,7 +1,7 @@
-import { UserOutlined } from "@ant-design/icons";
+import { PlusOutlined, UserOutlined } from "@ant-design/icons";
 import * as Styles from "./siedbar.styles";
 import Notification from "../icons/notification.svg";
-import Avatar from "../icons/user.png";
+import Avatar from "../icons/avatar.png";
 import { Link } from "react-router-dom";
 
 const Right = () => {
@@ -13,8 +13,8 @@ const Right = () => {
             style={{
               display: "flex",
               alignItems: "center",
-              gap:"8px",
-              justifyContent:"center"
+              gap: "8px",
+              justifyContent: "center",
             }}
             to={"/"}
           >
@@ -26,7 +26,27 @@ const Right = () => {
           <Styles.UserAcount src={Avatar} />
         </Styles.NavUser>
       </Styles.RightNavbar>
-      <Styles.TableCart>Hello Table</Styles.TableCart>
+      <Styles.TableCart>
+        <Styles.CartNav>
+          <Styles.CartNavLogoWrapper>
+            <Styles.CartLogo /> Mashinalar
+          </Styles.CartNavLogoWrapper>
+          <div
+            style={{
+              display: "flex",
+              gap: "18px",
+            }}
+          >
+            <Styles.CartAddButton>
+              {" "}
+              <PlusOutlined /> Kategoriya qo’shish
+            </Styles.CartAddButton>
+            <Styles.CartAddButton>
+              <PlusOutlined /> Mashina qo‘shish
+            </Styles.CartAddButton>
+          </div>
+        </Styles.CartNav>
+      </Styles.TableCart>
     </Styles.WrapperRight>
   );
 };

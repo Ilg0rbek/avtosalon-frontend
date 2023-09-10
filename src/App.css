@@ -1,4 +1,5 @@
 .App {
+  user-select: none;
   background: #FFF;
 }
 .pnlm-fullscreen-toggle-button{
