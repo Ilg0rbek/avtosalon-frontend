@@ -175,37 +175,52 @@ export const CartLogo = styled.div`
 
 export const CartAddButton = styled.button`
   display: flex;
-  width: 192px;
-  padding: 12px 20px;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  width: 200px;
+  padding: 12px 20px;
+  gap: 8px;
   border-radius: 12px;
   background: var(--primary-01, #2a85ff);
   color: var(--neutral-01, #fcfcfc);
   font-family: Inter;
-  font-size: 12px;
+  font-size: 13px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 24px; /* 160% */
+  font-weight: 700;
+  line-height: 24px;
   letter-spacing: -0.15px;
 `;
 
-export const TableHead = styled.div`
+export const Table = styled.div`
   display: flex;
-  width: 90%;
+  width: 100%;
   padding: 0px 12px;
   justify-content: space-between;
-  gap: 24px;
-  margin-top: 20px;
+  align-items: center;
 `;
 
 export const TableHeadText = styled.div`
-  color: var(--neutral-04, #6f767e);
+  color:  #6f767e;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.13px;
+`;
+
+export const TableBodyText = styled.div`
+  color: var(--neutral-07, #1a1d1f);
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 16px; /* 123.077% */
-  letter-spacing: -0.13px;
+  font-weight: 700;
+  letter-spacing: -0.15px;
+`;
+
+export const TableLine = styled.div`
+  height: 1px;
+  align-self: stretch;
+  border-radius: 1px;
+  background:  #efefef;
+  margin-top: 15px;
 `;

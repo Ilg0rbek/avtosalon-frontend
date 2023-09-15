@@ -52,6 +52,4 @@ const views360 = () => {
   );
 };
 
-
-
 export default views360;

@@ -93,4 +93,4 @@ const Capabilities = () => {
   );
 };
 
-export default Capabilities;
+export default Capabilities; 
