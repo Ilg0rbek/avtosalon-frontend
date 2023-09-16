@@ -135,7 +135,7 @@ export const UserAcount = styled.img`
 export const TableCart = styled.div`
   display: flex;
   width: 90%;
-  padding: 12px;
+  padding: 15px;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
@@ -178,7 +178,7 @@ export const CartAddButton = styled.button`
   justify-content: center;
   align-items: center;
   width: 200px;
-  padding: 12px 20px;
+  padding: 9px 20px;
   gap: 8px;
   border-radius: 12px;
   background: var(--primary-01, #2a85ff);
