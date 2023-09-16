@@ -59,7 +59,7 @@ const Right = () => {
               <img src={Plus} alt="" />
               Kategoriya qo’shish
             </Styles.CartAddButton>
-            <Styles.CartAddButton>
+            <Styles.CartAddButton onClick={showModal}>
               <img src={Plus} alt="" />
               Mashina qo‘shish
             </Styles.CartAddButton>
